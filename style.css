@@ -1,0 +1,516 @@
+/* normalize css */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'ugly duck font';
+  src: url('assets/DJB_Gonna_Share_My_Story.ttf');
+}
+
+body {
+  font-family: 'ugly duck font';
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: beige;
+  color: #55381A;
+}
+
+div {
+  /* border: solid 1px red; */
+  box-sizing: border-box;
+}
+
+.scene-container {
+  height: 750px;
+  position: relative;
+}
+.scene-separator {
+  height: 200px;
+}
+
+.trigger-0 {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 30px;
+}
+.trigger-10 {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 30px;
+}
+.trigger-20 {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 30px;
+}
+.trigger-30 {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 30px;
+}
+.trigger-40 {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  width: 30px;
+}
+.trigger-50 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 30px;
+}
+.trigger-60 {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 30px;
+}
+.trigger-70 {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  width: 30px;
+}
+.trigger-80 {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  width: 30px;
+}
+.trigger-90 {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  width: 30px;
+}
+.trigger-100 {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 30px;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.title {
+  position: fixed;
+  left: 50%;
+  top: -150%;
+  transform: translateX(-50%);
+  width: 800px;
+}
+.element {
+  position: absolute;
+  z-index: 2;
+}
+
+.story-sheet {
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  background: #EEDBB6;
+  box-shadow: 0 0 5px #888888;
+  overflow: hidden;
+}
+
+.text-container {
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 0;
+}
+
+/* scene1 */
+#text-scene1 {
+  top: 100px;
+  right: 100px;
+  max-width: 300px;
+}
+#swanegg {
+  width: 100px;
+  z-index: 10;
+  top: 245px;
+  left: 155px;
+}
+#plants,
+#plants-2 {
+  width: 400px;
+  top: 400px;
+}
+#swan-nest,
+#swan-nest-2 {
+  width: 400px;
+  top: 200px;
+  z-index: 2;
+}
+#duck-nest {
+  width: 400px;
+  top: 450px;
+  z-index: 2;
+  left: 450px;
+}
+
+/* scene 2 */
+#text-scene2 {
+  position: relative;
+  text-align: center;
+}
+#text-scene2-1 {
+  top: 0px;
+  right: 10px;
+  max-width: 600px;
+}
+#text-scene2-2 {
+  top: 250px;
+  right: 10px;
+  max-width: 220px;
+  text-align: right;
+}
+#scene2 {
+  opacity: 0;
+}
+#duck-nest-alone,
+#duck-nest-alone-2 {
+  width: 400px;
+  top: 450px;
+  z-index: 2;
+  left: 450px;
+}
+#shells, #shells1 {
+  position: absolute;
+  top: 0px;
+  width: 345px;
+  left: 30px;
+}
+#coverleft, #coverleft1 {
+  width: 113px;
+  position: absolute;
+  top: -4px;
+  left: 33px;
+  z-index: 2;
+}
+#covercenter, #covercenter1 {
+  position: absolute;
+  width: 113px;
+  top: -39px;
+  left: 163px;
+  z-index: 2;
+}
+#coverright, #coverright1 {
+  position: absolute;
+  z-index: 2;
+  width: 92px;
+  left: 299px;
+  top: -2px;
+}
+#main-egg-swan {
+  position: absolute;
+  width: 150px;
+  top: 35px;
+  left: 130px;
+  z-index: 2;
+}
+#coverswanegg {
+  position: absolute;
+  width: 130px;
+  top: -8px;
+  left: 139px;
+  z-index: 10;
+}
+#yellow-ducks {
+  position: absolute;
+  width: 245px;
+  left: 74px;
+  top: 20px;
+  z-index: -1;
+}
+#baby-swan {
+  position: absolute;
+  width: 104px;
+  left: 156px;
+  top: -35px;
+  z-index: 1;
+}
+
+/* scene3 */
+#text-scene3 {
+  top: -120px;
+  text-align: center;
+}
+#bg-lake {
+  z-index: 0;
+  bottom: 0px;
+  width: 100%;
+  bottom: -10px;
+  left: -100px;
+}
+
+#plant-lake {
+  width: 20%;
+  top: -5%;
+  left: 50%;
+}
+#bush {
+  left: -20%;
+  top: 3%;
+  width: 20%;
+  opacity: 0;
+}
+
+#scene3sub {
+  background: url('assets/escenario_lago.png') no-repeat -80px 0px / contain;
+}
+
+#duckmom,
+#angrymom {
+  width: 20%;
+  z-index: 10;
+  right: -25%;
+  opacity: 0;
+}
+
+#duckmom {
+  opacity: 0;
+}
+
+#angrymom {
+  opacity: 0;
+}
+
+.mini-ducks {
+  width: 5%;
+  z-index: 9;
+  left: -10%;
+  opacity: 0;
+}
+#duck5 {
+  top: 25%;
+}
+#duck6 {
+  top: 20%;
+}
+#duck7 {
+  top: 28%;
+  z-index: 12;
+}
+
+#swan-child {
+  top: 20%;
+}
+
+/* scene4 */
+#text-scene4 {
+  text-align: center;
+  top: -100px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#scene4sub {
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+}
+#floor {
+  height: 500px;
+  left: -61%;
+  background: transparent url('assets/suelo_escenario.png') no-repeat top right / cover;
+  width: 60%;
+}
+#lake-s4 {
+  height: 500px;
+  right: -61%;
+  width: 40%;
+}
+#water-lake-s4 {
+  position: absolute;
+  left: -205px;
+  top: 98px;
+}
+
+#sadswan {
+  left: -101%;
+  width: 130px;
+  top: 20%;
+  opacity: 0;
+}
+#tear {
+  width: 8px;
+  top: 22px;
+  right: 28px;
+  opacity: 0;
+}
+#reflection {
+  left: 70%;
+  top: 100%;
+  width: 80px;
+  opacity: 0;
+  z-index: 11;
+}
+
+/* scene5 */
+#text-scene5 {
+  right: 10px;
+  top: 10px;
+  max-width: 400px;
+}
+#bg-birds {
+  background: transparent url('assets/gansos_fondo.png') no-repeat top left / contain;
+  height: 350px;
+  opacity: 0;
+}
+#worm-bird {
+  width: 120px;
+  right: -40%;
+  top: -50px;
+  opacity: 0;
+}
+#ugly-duck-s5 {
+  top: 45%;
+  right: -200px;
+  width: 150px;
+  height: 183px;
+}
+#tr-1 {
+  opacity: 0;
+}
+/* scene6 */
+#text-scene6-1 {
+  top: -300px;
+  left: 10px;
+  max-width: 400px;
+}
+#text-scene6-2 {
+  width: 400px;
+  right: -405px;
+  top: -220px;
+}
+#scene6sub {
+  height: 700px;
+  width: 100%;
+}
+#swan-nest-6 {
+  opacity: 0;
+  width: 70%;
+  left: 15%;
+  height: 35%;
+  top: 100%;
+}
+#s6-main-nest {
+  z-index: 10;
+}
+#eat-1,
+#eat-2,
+#swan-waiting-food {
+  opacity: 1;
+}
+
+#eat-1,
+#eat-2 {
+  width: 55%;
+  top: -40%;
+  z-index: 11;
+  left: 45%;
+}
+
+#eat-2 {
+  opacity: 0;
+}
+
+#swan-waiting-food {
+  width: 25%;
+  left: 18%;
+  top: 9%;
+  opacity: 0;
+}
+
+/* scene7 */
+#text-scene7 {
+  top: -150px;
+  left: 30%;
+  width: 45%;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px #888;
+}
+#scene7 {
+  opacity: 0;
+}
+#scene7sub {
+  background: transparent url('assets/cuento_escenario_mejorado_1.png') no-repeat top left / cover;
+  background-size: 1000px 700px;
+  width: 100%;
+  margin: 0;
+  height: 700px;
+  opacity: 0;
+}
+#swan-7 {
+  width: 160px;
+  left: 0px;
+  top: 50px;
+}
+.tear-7-multi {
+  width: 11px;
+  top: 35px;
+  left: 112px;
+  opacity: 0;
+}
+#swan-mom-7 {
+  width: 300px;
+  right: 0;
+  top: 350px;
+  opacity: 0;
+}
+
+#swan-bro {
+  width: 100px;
+  left: 200px;
+  top: 35px;
+}
+
+/* scene8 */
+#text-scene8 {
+  width: 80%;
+  left: 10%;
+  top: 100px;
+}
+#scene8sub {
+  opacity: 1;
+  width: 100%;
+  height: 700px;
+  background: transparent url('assets/lago_final.png') repeat-x bottom left;
+}
+#swan-mom-8 {
+  width: 300px;
+  bottom: 100px;
+  left: -300px;
+  opacity: 1;
+}
+#swan-bro-8 {
+  width: 100px;
+  bottom: 120px;
+  left: -150px;
+  opacity: 0;
+}
+#swan-8 {
+  width: 100px;
+  bottom: 130px;
+  left: -150px;
+  opacity: 0;
+}
+#final-text {
+  top: -130px;
+  left: 50%;
+  opacity: 0;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Patito Feo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="jquery.js"></script>
+  <script src="TweenMax.js"></script>
+  <script src="ScrollMagic.js"></script>
+  <script src="animation.gsap.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <section class="story-sheet">
+
+    <div class="scene-container" id="intro">
+      <div class="title">
+        <img src="assets/titulo.png" alt="Patito feo" class="responsive-image" />
+      </div>
+      <div class="spacer trigger-50"></div>
+      <div class="spacer trigger-100"></div>
+    </div>
+    <div class="scene-container" id="introaux"></div>
+
+    <div class="scene-container" id="scene1">
+      <div class="text-container" id="text-scene1">
+        Había una vez en el bosque 4 huevos a punto de nacer, eran los huevos empollados por la mamá Pata
+      </div>
+
+      <div id="swanegg" class="element">
+        <img src="assets/huevo_cisne_solo.png" alt="s1-swan-egg" class="responsive-image" />
+      </div>
+      <div id="swan-nest" class="element">
+        <img src="assets/nido_huevos_cisnes.png" alt="s1-swan-nest" class="responsive-image" />
+      </div>
+      <div id="plants" class="element">
+        <img src="assets/plantas.png" alt="s1-plants" class="responsive-image" />
+      </div>
+
+      <div id="duck-nest-alone" class="element">
+        <img src="assets/nidos_huevos_patos_solo.png" alt="s1-duck-nest" class="responsive-image" />
+        <div id="coverleft1">
+          <img src="assets/cascaron_rosado_3.png" alt="duck-shells" class="responsive-image" />
+        </div>
+        <div id="covercenter1">
+          <img src="assets/cascaron_rosado_2.png" alt="duck-shells" class="responsive-image" />
+        </div>
+        <div id="coverright1">
+          <img src="assets/cascaron_rosado_1.png" alt="duck-shells" class="responsive-image" />
+        </div>
+
+        <img id="shells1" src="assets/huevos_rosados_partedeabajo.png" alt="duck-shells" class="responsive-image" />
+      </div>
+
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-40"></div>
+      <div class="spacer trigger-60"></div>
+      <div class="spacer trigger-100"></div>
+    </div>
+
+    <div class="scene-separator">
+      <div class="text-container" id="text-scene2">
+        Los huevitos empezaron a moverse, estaban a punto de nacer
+      </div>
+    </div>
+
+    <div class="scene-container" id="scene2">
+      <div id="scene2sub">
+        <div class="text-container" id="text-scene2-1">
+          Los huevos empezaron a romperse y uno a uno salían del cascarón. Al huevo más grande le tomó más tiempo romperlo, pero al
+          final logró salir. 
+        </div>
+        <div class="text-container" id="text-scene2-2">
+           Para sorpresa de todos el patito era muy distinto a los demás y debido a sus diferencias empezaron a llamarlo Patito feo.
+        </div>
+        <div id="swan-nest-2" class="element">
+          <img src="assets/nido_huevos_cisnes.png" alt="s1-swan-nest" class="responsive-image" />
+        </div>
+        <div id="plants-2" class="element">
+          <img src="assets/plantas.png" alt="s1-plants" class="responsive-image" />
+        </div>
+
+        <div id="duck-nest-alone-2" class="element">
+          <img src="assets/nidos_huevos_patos_solo.png" alt="s1-duck-nest" class="responsive-image" />
+          <div id="coverleft">
+            <img src="assets/cascaron_rosado_3.png" alt="duck-shells" class="responsive-image" />
+          </div>
+          <div id="covercenter">
+            <img src="assets/cascaron_rosado_2.png" alt="duck-shells" class="responsive-image" />
+          </div>
+          <div id="coverright">
+            <img src="assets/cascaron_rosado_1.png" alt="duck-shells" class="responsive-image" />
+          </div>
+          <div id="coverswanegg">
+            <img src="assets/cascaron_azul.png" alt="duck-shells" class="responsive-image" />
+          </div>
+          <div id="main-egg-swan">
+            <img src="assets/cascaron_azul_parte_de_abajo.png" alt="duck-shells" class="responsive-image" />
+          </div>
+          <div id="yellow-ducks">
+            <img src="assets/patosnacen.png" alt="duck-shells" class="responsive-image" />
+          </div>
+          <div id="baby-swan">
+            <img src="assets/cisne_sale_del_huevo.png" alt="duck-shells" class="responsive-image" />
+          </div>
+
+          <img id="shells" src="assets/huevos_rosados_partedeabajo.png" alt="duck-shells" class="responsive-image" />
+        </div>
+      </div>
+
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-50"></div>
+      <div class="spacer trigger-60"></div>
+      <div class="spacer trigger-80"></div>
+      <div class="spacer trigger-100"></div>
+    </div>
+    <div class="scene-separator"></div>
+    <div class="scene-separator"></div>
+    <div class="scene-separator"></div>
+
+    <div class="scene-container" id="scene3">
+      <div id="scene3sub" style="width: 100%;height: 100%;">
+        <div class="text-container" id="text-scene3">
+          La mamá Pata muy avergonzada de haber tenido un patito tan feo, alejó con su ala al pequeño, poniendo mayor atención al
+          resto de patitos
+        </div>
+        <div id="duckmom" class="element">
+          <img src="assets/mamapata.png" alt="duck-mom" class="responsive-image" />
+        </div>
+        <div id="angrymom" class="element">
+          <img src="assets/mamaenojada.png" alt="duck-mom" class="responsive-image" />
+        </div>
+        <div id="plant-lake" class="element">
+          <img src="assets/plantas.png" alt="s1-plants" class="responsive-image" />
+        </div>
+        <div id="bg-lake" class=""></div>
+        <div id="bush" class="element">
+          <img src="assets/arbusto.png" alt="s1-plants" class="responsive-image" />
+        </div>
+        <div id="duck5" class="element mini-ducks">
+          <img src="assets/pato5.png" alt="duck" class="responsive-image" />
+        </div>
+        <div id="duck6" class="element mini-ducks">
+          <img src="assets/pato6.png" alt="duck" class="responsive-image" />
+        </div>
+        <div id="duck7" class="element mini-ducks">
+          <img src="assets/pato7.png" alt="duck" class="responsive-image" />
+        </div>
+        <div id="swan-child" class="element mini-ducks">
+          <img src="assets/patito_feo_caminanando.png" alt="swan" class="responsive-image" />
+        </div>
+      </div>
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-10"></div>
+      <div class="spacer trigger-20"></div>
+      <div class="spacer trigger-30"></div>
+      <div class="spacer trigger-40"></div>
+      <div class="spacer trigger-50"></div>
+      <div class="spacer trigger-60"></div>
+      <div class="spacer trigger-70"></div>
+      <div class="spacer trigger-80"></div>
+      <div class="spacer trigger-90"></div>
+      <div class="spacer trigger-100"></div>
+    </div>
+
+    <div class="scene-separator"></div>
+    <div class="scene-separator"></div>
+
+    <div class="scene-container" id="scene4">
+      <div id="scene4sub">
+        <div class="text-container" id="text-scene4">
+          Patito feo se sintió muy triste y solo, no entendía por que su madre y sus hermanos no lo querían, se acercó a la orilla
+          del lago y en su reflejo miraba un patito muy feo, entonces empezó a llorar.
+        </div>
+        <div id="floor" class="element"></div>
+        <div id="lake-s4" class="element">
+          <img id="water-lake-s4" src="assets/lago.png" alt="s4-lake" class="responsive-image" />
+        </div>
+        <div id="sadswan" class="element">
+          <img src="assets/patito_feo_triste.png" alt="s4-sad-swan" class="responsive-image" />
+          <div id="tear" class="element">
+            <img src="assets/lagrima.png" alt="s4-tear" class="responsive-image" />
+          </div>
+          <div id="reflection" class="element">
+            <img src="assets/reflejo_agua.png" alt="s4-reflection" class="responsive-image" />
+          </div>
+        </div>
+      </div>
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-10"></div>
+      <div class="spacer trigger-20"></div>
+      <div class="spacer trigger-30"></div>
+      <div class="spacer trigger-40"></div>
+      <div class="spacer trigger-50"></div>
+      <div class="spacer trigger-60"></div>
+      <div class="spacer trigger-70"></div>
+      <div class="spacer trigger-80"></div>
+      <div class="spacer trigger-90"></div>
+      <div class="spacer trigger-100"></div>
+    </div>
+    <div class="scene-separator"></div>
+
+    <div class="scene-container" id="scene5">
+      <div id="scene5sub">
+        <div class="text-container" id="text-scene5">
+           El Patito Feo caminaba muy triste alrededor del lago de repente una ave pasó volando con un gusano en la boca, el patito
+          feo miró que aquella ave está llevando comida a sus hijitos a un nido en la montaña.
+        </div>
+        <div id="bg-birds"></div>
+        <div id="worm-bird" class="element">
+          <img src="assets/pajaro_gusano.png" alt="s5-bird" class="responsive-image" />
+        </div>
+        <div id="ugly-duck-s5" class="element">
+          <img id="tr-2" src="assets/patito_feo_camina_triste.png" alt="s5-swan1" class="responsive-image element" />
+          <img id="tr-1" src="assets/patito_feo_se_sroprende.png" alt="s5-swan1" class="responsive-image element" />
+        </div>
+      </div>
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-10"></div>
+      <div class="spacer trigger-20"></div>
+      <div class="spacer trigger-30"></div>
+      <div class="spacer trigger-60"></div>
+    </div>
+    <div class="scene-separator"></div>
+    <div class="scene-separator"></div>
+
+    <div class="scene-container" id="scene6">
+      <div id="scene6sub">
+        <div class="text-container" id="text-scene6-1">
+          El patito feo se acercó al nido de los pájaros para ver si había alguien como él.
+        </div>
+        <div class="text-container" id="text-scene6-2">
+          Pero al ver su hogar irrumpido, los pájaros lo echaron y el patito feo tuvo que irse de allí.
+        </div>
+        <div id="swan-nest-6" class="element">
+          <img id="s6-main-nest" src="assets/nido_gansos.png" alt="s6-nest" class="responsive-image element" />
+          <img id="eat-1" src="assets/familia_gansos.png" alt="s6-nest" class="responsive-image element" />
+          <img id="eat-2" src="assets/gansos_enojados.png" alt="s6-nest" class="responsive-image element" />
+          <img id="swan-waiting-food" src="assets/patito_feo_esperando_comida.png" alt="s6-nest" class="responsive-image element"
+          />
+        </div>
+      </div>
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-30"></div>
+      <div class="spacer trigger-50"></div>
+      <div class="spacer trigger-60"></div>
+      <div class="spacer trigger-70"></div>
+      <div class="spacer trigger-80"></div>
+      <div class="spacer trigger-90"></div>
+      <div class="spacer trigger-100"></div>
+    </div>
+    <div class="scene-container" id="scene6-1">
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-10"></div>
+      <div class="spacer trigger-20"></div>
+      <div class="spacer trigger-30"></div>
+      <div class="spacer trigger-50"></div>
+      <div class="spacer trigger-60"></div>
+      <div class="spacer trigger-70"></div>
+      <div class="spacer trigger-80"></div>
+      <div class="spacer trigger-90"></div>
+    </div>
+
+    <div class="scene-separator"></div>
+
+    <div class="scene-container" id="scene7">
+      <div id="scene7sub">
+        <div class="text-container" id="text-scene7">
+          El patito feo lloraba su desgracia, y su llanto fue escuchado por una mamá cisne y sus hijos, quienes se acercaron a ver
+          qué le pasaba.
+        </div>
+        <div id="swan-7" class="element">
+          <img src="assets/Patito_feo_triste_2_tronco.png" alt="s6-sad-swan" class="responsive-image" />
+          <img id="tear-7" src="assets/lagrima.png" alt="s6-sad-swan" class="responsive-image element tear-7-multi" />
+          <img id="tear-7-a" src="assets/lagrima.png" alt="s6-sad-swan" class="responsive-image element tear-7-multi" />
+          <img id="tear-7-b" src="assets/lagrima.png" alt="s6-sad-swan" class="responsive-image element tear-7-multi" />
+          <img id="tear-7-c" src="assets/lagrima.png" alt="s6-sad-swan" class="responsive-image element tear-7-multi" />
+          <img id="tear-7-d" src="assets/lagrima.png" alt="s6-sad-swan" class="responsive-image element tear-7-multi" />
+        </div>
+        <div id="swan-mom-7" class="element">
+          <img src="assets/mama_cisne_1.png" alt="s6-sad-swan" class="responsive-image" />
+          <div id="swan-bro" class="element">
+            <img src="assets/hermano_patito_feo_1.png" alt="s6-sad-swan" class="responsive-image" />
+          </div>
+        </div>
+      </div>
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-20"></div>
+      <div class="spacer trigger-50"></div>
+      <div class="spacer trigger-70"></div>
+      <div class="spacer trigger-80"></div>
+      <div class="spacer trigger-90"></div>
+      <div class="spacer trigger-100"></div>
+    </div>
+
+    <div class="scene-container" id="scene7-1">
+      <div class="spacer trigger-10"></div>
+      <div class="spacer trigger-20"></div>
+      <div class="spacer trigger-30"></div>
+      <div class="spacer trigger-40"></div>
+      <div class="spacer trigger-60"></div>
+      <div class="spacer trigger-90"></div>
+    </div>
+
+    <div class="scene-container" id="scene8">
+      <div id="scene8sub">
+        <div class="text-container" id="text-scene8">
+          El patito feo se dió cuenta de que era igual a los cisnes, y ellos lo acogieron en su familia. Juntos se fueron nadando
+          por el río.
+        </div>
+        <div id="swan-mom-8" class="element">
+          <img src="assets/mama_cisne_2.png" alt="s8-swan-family" class="responsive-image" />
+        </div>
+        <div id="swan-bro-8" class="element">
+          <img src="assets/hermano_patito_feo_2.png" alt="s8-swan-family" class="responsive-image" />
+        </div>
+        <div id="swan-8" class="element">
+          <img src="assets/patito_feo_feliz_mama.png" alt="s8-swan-family" class="responsive-image" />
+        </div>
+      </div>
+      <div class="spacer trigger-0"></div>
+      <div class="spacer trigger-10"></div>
+      <div class="spacer trigger-20"></div>
+      <div class="spacer trigger-30"></div>
+      <div class="spacer trigger-40"></div>
+      <div class="spacer trigger-50"></div>
+      <div class="spacer trigger-60"></div>
+      <div class="spacer trigger-70"></div>
+      <div class="spacer trigger-80"></div>
+      <div class="spacer trigger-90"></div>
+      <div class="spacer trigger-100"></div>
+    </div>
+
+    <div class="scene-container" id="scene8-aux">
+      <div id="final-text" class="element">
+        <img src="assets/fin.png" alt="Fin" class="responsive-image" />
+      </div>
+      <div class="spacer trigger-10"></div>
+    </div>
+
+  </section>
+</body>
+
+</html>
